@@ -60,9 +60,9 @@
   M <- myVars$M 
   
  
-  bugd0_MT <- read.csv("CI_MT_Summary_PSLV_03Oct2021_DETECTIONS_clean.csv",header = T, sep = ",")
-  bugd0 <- read.csv("PSLV-Simulation_Summary_03Oct2021_DETECTIONS_clean.csv",header = T, sep = ",")
-  inputs0 <- read.csv("PSLV-Simulation_Summary_03Oct2021_INPUTS_clean.csv", header = T, sep = ",")
+  bugd0_MT <- read.csv("CI_MT_Summary_03Oct2021_DETECTIONS_clean.csv",header = T, sep = ",")
+  bugd0 <- read.csv("Simulation_Summary_03Oct2021_DETECTIONS_clean.csv",header = T, sep = ",")
+  inputs0 <- read.csv("Simulation_Summary_03Oct2021_INPUTS_clean.csv", header = T, sep = ",")
   
   ##--- BUG ID ---##
   bugids <- c(paste0("MT_", bugd0_MT[, "BUG_ID"]), paste0("ST_", bugd0[, "BUG_ID"])) # n.detected x 1
